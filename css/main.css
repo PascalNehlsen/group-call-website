@@ -1,0 +1,108 @@
+/* ==================
+   CSS Custom Properties
+   ================== */
+
+:root {
+  /* Farben */
+  --primary-color: #007bff;
+  --secondary-color: #6c757d;
+  --text-color: #333;
+  --background-color: #ffffff;
+  --border-color: #dee2e6;
+  
+  /* Spacing */
+  --spacing-xs: 0.25rem;
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 2rem;
+  --spacing-xl: 4rem;
+  
+  /* Typography */
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-size-base: 1rem;
+  --line-height-base: 1.5;
+}
+
+/* ==================
+   Universal Reset
+   ================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ==================
+   Base Styles
+   ================== */
+
+body {
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-base);
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+/* ==================
+   Typography
+   ================== */
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: var(--spacing-md);
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.75rem;
+}
+
+p {
+  margin-bottom: var(--spacing-md);
+}
+
+/* ==================
+   Links
+   ================== */
+
+a {
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==================
+   Container
+   ================== */
+
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 var(--spacing-md);
+}
+
+/* ==================
+   Utility Classes
+   ================== */
+
+.text-center {
+  text-align: center;
+}
+
+.mt-1 { margin-top: var(--spacing-md); }
+.mb-1 { margin-bottom: var(--spacing-md); }
+.mt-2 { margin-top: var(--spacing-lg); }
+.mb-2 { margin-bottom: var(--spacing-lg); }

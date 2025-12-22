@@ -1,0 +1,21 @@
+name: "Task"
+description: "Pick one issue and work on it"
+title: "[TASK]: "
+labels: ["available"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ⚠️ Before starting:
+        - Assign this issue to yourself
+        - Make sure no one else is working on it
+
+  - type: input
+    id: branch
+    attributes:
+      label: "Planned branch name"
+      placeholder: "feature/your-name-task"
+    validations:
+      required: true
