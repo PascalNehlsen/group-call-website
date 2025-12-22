@@ -1,10 +1,10 @@
 # Pages Ordner
 
-## 📄 Zweck
+## Zweck
 
 Dieser Ordner enthält alle HTML-Seiten **außer** der `index.html` (die liegt im Root-Verzeichnis).
 
-## 📋 Regeln
+## Regeln
 
 ### Dateinamen
 - Kleinbuchstaben
