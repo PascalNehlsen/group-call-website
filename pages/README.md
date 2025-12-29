@@ -82,7 +82,7 @@ Jede Seite muss diese Grundstruktur haben:
    - 2 Spaces pro Ebene (keine Tabs)
    - Konsistente Formatierung
 
-## ✅ Checkliste vor dem Commit
+## Checkliste vor dem Commit
 
 - [ ] Seite öffnet sich ohne Fehler im Browser
 - [ ] Alle Links funktionieren
@@ -92,45 +92,7 @@ Jede Seite muss diese Grundstruktur haben:
 - [ ] HTML ist valide (nutze https://validator.w3.org/)
 - [ ] Responsive Design funktioniert (teste verschiedene Bildschirmgrößen)
 
-## 🚫 Häufige Fehler
-
-❌ **Falsch**: Absoluter Pfad
-```html
-<link rel="stylesheet" href="/css/main.css">
-```
-
-✅ **Richtig**: Relativer Pfad
-```html
-<link rel="stylesheet" href="../css/main.css">
-```
-
----
-
-❌ **Falsch**: Mehrere h1
-```html
-<h1>Willkommen</h1>
-<h1>Unsere Services</h1>
-```
-
-✅ **Richtig**: Nur ein h1
-```html
-<h1>Willkommen</h1>
-<h2>Unsere Services</h2>
-```
-
----
-
-❌ **Falsch**: Leere alt-Attribute
-```html
-<img src="team.jpg">
-```
-
-✅ **Richtig**: Beschreibende alt-Texte
-```html
-<img src="team.jpg" alt="Das LiveCalls Team bei der Arbeit">
-```
-
-## 💡 Tipps
+## Tipps
 
 - Kopiere eine bestehende Seite als Template für neue Seiten
 - Teste die Links zwischen den Seiten
