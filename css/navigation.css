@@ -44,28 +44,19 @@ header {
   text-underline-offset: 0.3em;
 }
 
-/*==========  
-Hamburger Menu
-========== */
-.hamburger-menu {
-  display: inline-block;
-  cursor: pointer;
-  z-index: 1;
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
+  }
 }
-.bar1,
-.bar2,
-.bar3 {
-  width: 2em;
-  height: 2px;
-  color: black;
-  margin: 0.5em 0;
-}
-.change .bar1 {
-  transform: translate(0, 11px) rotate(-45deg);
-}
-
-.change .bar2 {opacity: 0;}
-
-.change .bar3 {
-  transform: translate(0, -11px) rotate(45deg);
+@media (max-width: 430px) {
+  .nav-menu {
+    flex-direction: column;
+    gap: 2em;
+  }
+  .nav-menu li {
+    width: 100%;
+    text-align: center;
+  }
 }
