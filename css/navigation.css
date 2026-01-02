@@ -1,4 +1,4 @@
-@import url(./main.css);
+
 body {
   display: flex;
   flex-direction: column;
@@ -6,9 +6,7 @@ body {
   align-items: center;
   min-height: 100vh;
 }
-main {
-  flex: 1;
-}
+
 header {
   width: 100%;
   display: flex;
@@ -39,7 +37,7 @@ header {
   color: var(--text-color);
   font-size: 1.2rem;
 }
-.activ-link {
+.active-link {
   text-decoration: underline;
   text-underline-offset: 0.3em;
 }
