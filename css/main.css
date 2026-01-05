@@ -9,16 +9,17 @@
   --text-color: #333;
   --background-color: #ffffff;
   --border-color: #dee2e6;
-  
+
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
   --spacing-md: 1rem;
   --spacing-lg: 2rem;
   --spacing-xl: 4rem;
-  
+
   /* Typography */
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    "Helvetica Neue", Arial, sans-serif;
   --font-size-base: 1rem;
   --line-height-base: 1.5;
 }
@@ -33,6 +34,10 @@
   box-sizing: border-box;
 }
 
+.navigation {
+  display: flex;
+  justify-content: space-around;
+}
 /* ==================
    Base Styles
    ================== */
@@ -49,7 +54,12 @@ body {
    Typography
    ================== */
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   margin-bottom: var(--spacing-md);
   line-height: 1.2;
 }
@@ -102,7 +112,15 @@ a:hover {
   text-align: center;
 }
 
-.mt-1 { margin-top: var(--spacing-md); }
-.mb-1 { margin-bottom: var(--spacing-md); }
-.mt-2 { margin-top: var(--spacing-lg); }
-.mb-2 { margin-bottom: var(--spacing-lg); }
+.mt-1 {
+  margin-top: var(--spacing-md);
+}
+.mb-1 {
+  margin-bottom: var(--spacing-md);
+}
+.mt-2 {
+  margin-top: var(--spacing-lg);
+}
+.mb-2 {
+  margin-bottom: var(--spacing-lg);
+}
