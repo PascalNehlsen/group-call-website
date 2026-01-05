@@ -1,10 +1,10 @@
 # Images Ordner
 
-## 🖼️ Zweck
+## Zweck
 
 Dieser Ordner enthält alle Bilder und Grafiken für die Website.
 
-## 📋 Regeln
+## Regeln
 
 ### Dateinamen
 - **Kleinbuchstaben**
@@ -37,7 +37,7 @@ Dieser Ordner enthält alle Bilder und Grafiken für die Website.
 
 ### Dateigrößen
 
-⚠️ **Wichtig**: Große Bilder verlangsamen die Website!
+**Wichtig**: Große Bilder verlangsamen die Website!
 
 **Richtlinien:**
 - **Hero-Bilder**: max. 500 KB
@@ -60,7 +60,7 @@ Schneide Bilder auf realistische Größen zu:
 - **Team-Fotos**: 500 x 500 px
 - **Icons**: 64 x 64 px (oder SVG)
 
-## 🎯 Nutzung in HTML
+## Nutzung in HTML
 
 ### Basis
 ```html
@@ -112,13 +112,7 @@ Der `alt` Text ist **Pflicht** und beschreibt das Bild für:
 <img src="logo.jpg" alt="Logo Logo Logo">
 ```
 
-### Dekorative Bilder
-Falls ein Bild rein dekorativ ist (keine Information vermittelt):
-```html
-<img src="decorative-pattern.jpg" alt="">
-```
-
-## 📁 Organisation
+## Organisation
 
 ### Unterordner (bei vielen Bildern)
 ```
@@ -137,7 +131,7 @@ images/
     └── meeting-room.jpg
 ```
 
-## ✅ Checkliste vor dem Commit
+## Checkliste vor dem Commit
 
 - [ ] Dateiname ist beschreibend und kleingeschrieben
 - [ ] Bild ist komprimiert (richtige Dateigröße)
@@ -146,35 +140,7 @@ images/
 - [ ] Bild wird im Browser korrekt angezeigt
 - [ ] Alt-Text ist vorhanden und beschreibend
 
-## 🚫 Häufige Fehler
-
-### ❌ Riesige Dateigrößen
-```
-hero-image.jpg - 8.5 MB   ← Zu groß!
-```
-**Lösung**: Bei tinypng.com komprimieren
-
-### ❌ Falscher Pfad
-```html
-<!-- Aus pages/about.html -->
-<img src="images/logo.png">  ❌ Falsch
-<img src="../images/logo.png">  ✅ Richtig
-```
-
-### ❌ Fehlender Alt-Text
-```html
-<img src="team.jpg">  ❌ Fehlt
-<img src="team.jpg" alt="Das LiveCalls Team">  ✅ Richtig
-```
-
-### ❌ Hochauflösende Bilder für kleine Elemente
-```html
-<!-- Icon mit 50x50 px Anzeige -->
-<img src="icon-5000x5000.png" width="50">  ❌ Verschwenderisch
-<!-- Besser: icon-64x64.png oder icon.svg -->
-```
-
-## 💡 Tipps
+## Tipps
 
 1. **Lizenzfreie Bilder finden:**
    - https://unsplash.com/
@@ -194,13 +160,11 @@ hero-image.jpg - 8.5 MB   ← Zu groß!
    - Rechtsklick auf Bild → "Untersuchen"
    - Siehst du die tatsächliche vs. angezeigte Größe
 
-## 🔒 Copyright & Lizenzen
+## Copyright & Lizenzen
 
-⚠️ **Wichtig**: Nutze nur Bilder, die du verwenden darfst!
+**Wichtig**: Nutze nur Bilder, die du verwenden darfst!
 
-- Eigene Fotos ✅
-- Lizenzfreie Bilder (Unsplash, Pexels) ✅
-- Bilder mit korrekter Lizenz ✅
-- Google Bilder einfach kopieren ❌
-
-Bei lizenzfreien Bildern: Credits in einem `CREDITS.md` dokumentieren (optional aber fair).
+- Eigene Fotos 
+- Lizenzfreie Bilder (Unsplash, Pexels) 
+- Bilder mit korrekter Lizenz 
+- Google Bilder einfach kopieren 

@@ -1,6 +1,6 @@
 # LiveCalls HTML/CSS Lernprojekt
 
-## 🎯 Projektziel
+## Projektziel
 
 Dieses Projekt dient **ausschließlich zu Lernzwecken**. Das Ziel ist nicht, eine perfekte Website zu bauen, sondern praktische Erfahrung zu sammeln in:
 
@@ -10,33 +10,12 @@ Dieses Projekt dient **ausschließlich zu Lernzwecken**. Das Ziel ist nicht, ein
 - **Projektstruktur**: Sauberen, wartbaren Code schreiben
 - **HTML & CSS Grundlagen**: Semantisches HTML und modernes CSS
 
-## 🚀 Schnellstart
-
-1. **Repository forken**
-   - Klicke oben rechts auf "Fork"
-   - Damit erhältst du deine eigene Kopie des Projekts
-
-2. **Lokal klonen**
-   ```bash
-   git clone https://github.com/DEIN-USERNAME/livecalls.git
-   cd livecalls/html
-   ```
-
-3. **Im Browser öffnen**
-   ```bash
-   # Öffne index.html direkt im Browser
-   # Oder nutze einen einfachen HTTP-Server:
-   python3 -m http.server 8000
-   # Dann öffne http://localhost:8000
-   ```
-
-## 📋 Regeln und Einschränkungen
+## Regeln und Einschränkungen
 
 ### Technische Einschränkungen
 - ✅ Nur HTML und CSS
 - ❌ Kein JavaScript
 - ❌ Keine Frameworks oder Libraries
-- ❌ Keine Build-Tools oder Preprozessoren
 
 ### Arbeitsregeln
 - **Eine Person = Eine Datei**: Um Merge-Konflikte zu vermeiden, arbeitet jede Person nur an einer Datei
@@ -44,7 +23,7 @@ Dieses Projekt dient **ausschließlich zu Lernzwecken**. Das Ziel ist nicht, ein
 - **Ein Issue = Ein PR**: Jeder Pull Request löst genau ein Issue
 - **Reviews sind Pflicht**: Mindestens eine Freigabe vor dem Merge
 
-## 🤝 Wie du beitragen kannst
+## Wie du beitragen kannst
 
 ### 1. Issue auswählen
 
@@ -52,28 +31,44 @@ Dieses Projekt dient **ausschließlich zu Lernzwecken**. Das Ziel ist nicht, ein
 - Suche ein unassigned Issue, das zu deinem Level passt
   - 🟢 **Beginner**: Grundlagen, erste Schritte
   - 🟡 **Intermediate**: Fortgeschrittene CSS, komplexere Layouts
-- Kommentiere: "Ich übernehme das" und warte auf die Zuweisung
+- Kommentiere: "Ich übernehme das" und weise dich zu!
+- Anschließend ist das Issue für dich reserviert und du kannst mit dem Schnellstart beginnen.
 
-### 2. Branch erstellen
+### Schnellstart
+
+1. **Öffne dein Terminal in VSCode:**
+
+   - Obere Toolbar
+   - `Terminal` -> `Neues Terminal`
+
+2. **Projekt lokal klonen mit SSH**
 
 ```bash
-# Hole die neuesten Änderungen
-git checkout main
-git pull upstream main
-
-# Erstelle einen neuen Branch
-git checkout -b feature/issue-nummer-kurze-beschreibung
-# Beispiel: git checkout -b feature/12-navigation-styling
+git clone git@github.com:pascalnehlsen/group-call-website.git
+cd group-call-website
 ```
 
-### 3. Änderungen vornehmen
+3. **Projekt lokal klonen mit HTTPS**
+
+```bash
+git clone https://github.com/pascalnehlsen/group-call-website.git
+cd group-call-website
+```
+
+4. **Feature Branch erstellen**
+
+```bash
+git checkout -b <branch-typ>/<branch-thema>
+```
+
+5. **Änderungen vornehmen**
 
 - Öffne die entsprechende Datei
 - Mache deine Änderungen
 - Teste im Browser (mehrere Browser wenn möglich)
 - Achte auf sauberen, lesbaren Code
 
-### 4. Committen
+6. **Committen**
 
 ```bash
 # Änderungen hinzufügen
@@ -109,12 +104,13 @@ Closes #IssueNummer
 ### 5. Pull Request erstellen
 
 ```bash
-# Push zu deinem Fork
-git push origin feature/12-navigation-styling
+# Push zu deiner Feature Branch
+git push feature/12-navigation-styling
 ```
 
-- Gehe auf GitHub zu deinem Fork
-- Klicke "Compare & pull request"
+- Gehe zum GitHub Repo
+- Klicke `Pull Request` -> `New pull request` 
+- Nehme als Base (links) den Branch `main` aus. Rechts deine erstellte und aktualisierte Feature Branch.
 - Fülle die PR-Vorlage aus:
   - **Titel**: Klare Beschreibung der Änderung
   - **Beschreibung**: Was, warum, wie
@@ -123,9 +119,9 @@ git push origin feature/12-navigation-styling
 
 ### 6. Code Review
 
-- Warte auf Feedback
+- Warte auf Feedback von anderen Teilnehmern
 - Sei offen für Verbesserungsvorschläge
-- Führe angeforderte Änderungen durch:
+- Führe angeforderte Änderungen durch und:
   ```bash
   # Änderungen vornehmen
   git add .
@@ -139,43 +135,7 @@ git push origin feature/12-navigation-styling
 - Dein Branch wird automatisch gelöscht
 - Glückwunsch! 🎉
 
-## 📁 Projektstruktur
-
-```
-html/
-├── index.html              # Hauptseite
-├── pages/                  # Alle weiteren HTML-Seiten
-│   ├── about.html
-│   ├── contact.html
-│   └── ...
-├── css/                    # Alle CSS-Dateien
-│   ├── main.css           # Globale Styles
-│   ├── navigation.css
-│   ├── footer.css
-│   └── ...
-├── images/                 # Alle Bilder
-│   ├── logo.png
-│   └── ...
-└── README.md              # Diese Datei
-```
-
-Siehe die README-Dateien in den einzelnen Ordnern für spezifische Regeln.
-
 ## 🎓 Git-Workflow Cheatsheet
-
-### Erstmaliges Setup
-
-```bash
-# Fork klonen
-git clone https://github.com/DEIN-USERNAME/livecalls.git
-cd livecalls/html
-
-# Upstream hinzufügen (Original-Repo)
-git remote add upstream https://github.com/ORIGINAL-OWNER/livecalls.git
-
-# Überprüfen
-git remote -v
-```
 
 ### Vor jedem neuen Issue
 
@@ -184,11 +144,7 @@ git remote -v
 git checkout main
 
 # Hole neueste Änderungen vom Original
-git fetch upstream
-git merge upstream/main
-
-# Pushe zu deinem Fork
-git push origin main
+git pull origin main
 
 # Neuer Branch
 git checkout -b feature/issue-nummer-beschreibung
@@ -207,32 +163,10 @@ git add dateiname.html
 git commit -m "feat: Beschreibung"
 
 # Pushen
-git push origin branch-name
+git push <branch-name>
 ```
 
-### Branch aktualisieren
-
-```bash
-# Falls main sich geändert hat während du arbeitest
-git checkout main
-git pull upstream main
-git checkout dein-branch
-git rebase main
-```
-
-## 💡 Tipps für Anfänger
-
-1. **Klein anfangen**: Wähle ein Beginner-Issue für den Start
-2. **Fragen stellen**: Nutze die Kommentare im Issue oder PR
-3. **Browser-DevTools nutzen**: F12 öffnet die Entwicklertools
-4. **Code-Qualität**:
-   - Einrückung: 2 Spaces
-   - Sinnvolle Klassennamen (deutsch oder englisch, aber konsistent)
-   - Kommentare für komplexe Abschnitte
-5. **Testen**: Öffne die Seite in verschiedenen Browsern
-6. **Review geben**: Schaue dir auch PRs von anderen an
-
-## ❓ Häufige Fragen
+## Häufige Fragen
 
 **Q: Ich habe einen Merge-Konflikt. Was nun?**  
 A: Melde dich im Issue oder frage einen Maintainer um Hilfe.
@@ -246,16 +180,26 @@ A: Maximal 7 Tage. Falls du mehr Zeit brauchst, kommuniziere das im Issue.
 **Q: Darf ich selbst Issues erstellen?**  
 A: Ja! Nutze dafür die Issue-Templates und beschreibe klar, was gemacht werden soll.
 
-## 📞 Kontakt & Hilfe
+## 🔗 Wichtige Links
 
-- **Issues**: Für Fragen zu spezifischen Tasks
-- **Discussions**: Für allgemeine Fragen
-- **Maintainer**: @pascal (oder entsprechender Username)
+### Dokumentation
+- [W3Schools HTML](https://www.w3schools.com/html/)
+- [W3Schools CSS](https://www.w3schools.com/css/)
+- [MDN Web Docs](https://developer.mozilla.org/)
 
-## 📝 Lizenz
+### Tools
+- [HTML Validator](https://validator.w3.org/)
+- [CSS Validator](https://jigsaw.w3.org/css-validator/)
+- [TinyPNG (Bilder komprimieren)](https://tinypng.com/)
+
+### Git
+- [Git Cheat Sheet](https://education.github.com/git-cheat-sheet-education.pdf)
+- [GitHub Pull Request Guide](https://docs.github.com/en/pull-requests)
+
+## Lizenz
 
 Dieses Projekt dient ausschließlich zu Lernzwecken.
 
 ---
 
-**Viel Erfolg und happy coding! 🚀**
+**Viel Erfolg und happy coding!**
