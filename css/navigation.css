@@ -1,45 +1,71 @@
-
 body {
+  align-items: center;
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   min-height: 100vh;
+}
+.skip-link {
+  color: var(--primary-wcag-color);
 }
 
 header {
-  width: 100%;
   display: flex;
   justify-content: center;
-}
-.navigation {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  max-width: 1440px;
   width: 100%;
-  padding: var(--spacing-md);
 }
-.nav-logo a img {
-  width: 10em;
-  padding: 0.5em;
-}
-.nav-menu {
-  text-decoration: none;
-  list-style: none;
+
+nav {
+  align-items: center;
   display: flex;
   justify-content: space-between;
+  max-width: 1440px;
+  padding-left: var(--spacing-md);
+  padding-right: var(--spacing-md);
+  width: 100%;
 }
-.nav-menu li {
+
+.nav-logo {
+  aspect-ratio: 1/1;
+  background: url("../images/logo/livecalls-logo.png");
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 130px;
+}
+
+ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  text-decoration: none;
+}
+li {
   padding: 0 var(--spacing-md);
 }
-.nav-menu li a {
+
+ul li a {
   color: var(--text-color);
   font-size: 1.2rem;
+  animation: all 1700ms ease-in-out;
 }
+
+ul li a:focus-visible {
+  padding: 5px;
+  transform: scale(1.01);
+}
+
+ul li a:hover {
+  line-height: 1.1;
+  text-underline-offset: 0.3em;
+  color: var(--primary-color);
+}
+
 .active-link {
   text-decoration: underline;
   text-underline-offset: 0.3em;
+  color: var(--primary-wcag-color);
+  font-weight: 500;
 }
 
 @media (max-width: 768px) {
@@ -48,11 +74,13 @@ header {
     box-shadow: 0px 1px 0px 0px rgba(0, 0, 0, 0.1);
   }
 }
+
 @media (max-width: 430px) {
   .nav-menu {
     flex-direction: column;
     gap: 2em;
   }
+
   .nav-menu li {
     width: 100%;
     text-align: center;
