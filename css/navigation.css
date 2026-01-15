@@ -34,24 +34,24 @@ nav {
   height: 130px;
 }
 
-ul {
+nav ul {
   display: flex;
   justify-content: space-between;
   list-style: none;
   text-decoration: none;
 }
-li {
+nav ul li {
   padding: 0 var(--spacing-md);
 }
 
 ul li a {
   color: var(--text-color);
   font-size: 1.2rem;
-  animation: all 1700ms ease-in-out;
+  transition: all 170ms ease-in-out;
 }
 
 ul li a:focus-visible {
-  padding: 5px;
+  padding: 0.5rem;
   transform: scale(1.01);
 }
 
