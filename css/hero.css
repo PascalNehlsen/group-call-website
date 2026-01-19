@@ -1,10 +1,23 @@
 .hero {
   background: linear-gradient(180deg, #f9fbff 0%, var(--background-color) 100%);
-  padding: var(--spacing-xl) 0;
+  min-height: 100vh;
+  width: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-content {
+  text-align: left;
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 900px;
 }
 
 .hero .container {
   text-align: left;
+  padding: var(--spacing-xl) var(--spacing-md);
+  max-width: 900px;
 }
 
 .hero .eyebrow {
@@ -54,9 +67,20 @@
   flex-wrap: wrap;
 }
 
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+}
+
 @media (max-width: 768px) {
   .hero {
-    padding: var(--spacing-lg) 0;
+    min-height: 100vh;
+    padding: 0;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
   }
 
   .hero h1 {
