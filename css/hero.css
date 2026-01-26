@@ -1,6 +1,6 @@
 .hero {
   background: linear-gradient(180deg, #f9fbff 0%, var(--background-color) 100%);
-  min-height: 100vh;
+  min-height: calc(100vh -150px);
   width: 100%;
   padding: 0;
   display: flex;
