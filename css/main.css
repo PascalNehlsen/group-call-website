@@ -4,12 +4,23 @@
 
 :root {
   /* Farben */
-  --primary-color: #007bff;
+  --primary-color: #0056b3;
   --primary-wcag-color: #342a75;
   --secondary-color: #6c757d;
   --text-color: #333;
   --background-color: #ffffff;
   --border-color: #dee2e6;
+
+  /* Neue Farben für dunkles Theme */
+  --primary-blue: #3498db;
+  --hero-dark-1: #2c3e50;
+  --hero-dark-2: #34495e;
+  --hero-text-light: #ecf0f1;
+  --hero-text-lighter: #dfe6e9;
+  --hero-eyebrow: #b8d4f0;
+  --features-bg-light: #f8f9fa;
+  --features-text: #495057;
+  --features-border: #e8ecf0;
 
   /* Spacing */
   --spacing-xs: 0.25rem;
@@ -19,8 +30,9 @@
   --spacing-xl: 4rem;
 
   /* Typography */
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
-    "Helvetica Neue", Arial, sans-serif;
+  --font-family:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
+    Arial, sans-serif;
   --font-size-base: 1rem;
   --line-height-base: 1.5;
 }
@@ -39,9 +51,6 @@
   display: flex;
   justify-content: space-around;
 }
-/* ==================
-   Base Styles
-   ================== */
 
 body {
   font-family: var(--font-family);
@@ -50,10 +59,6 @@ body {
   color: var(--text-color);
   background-color: var(--background-color);
 }
-
-/* ==================
-   Typography
-   ================== */
 
 h1,
 h2,
@@ -81,12 +86,8 @@ p {
   margin-bottom: var(--spacing-md);
 }
 
-/* ==================
-   Links
-   ================== */
-
 a {
-  color: var(--primary-color);
+  color: #0056b3;
   text-decoration: none;
 }
 
@@ -94,20 +95,12 @@ a:hover {
   text-decoration: underline;
 }
 
-/* ==================
-   Container
-   ================== */
-
 .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
   padding: 0 var(--spacing-md);
 }
-
-/* ==================
-   Utility Classes
-   ================== */
 
 .text-center {
   text-align: center;
@@ -125,3 +118,49 @@ a:hover {
 .mb-2 {
   margin-bottom: var(--spacing-lg);
 }
+
+.btn {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.btn.primary {
+  background-color: #3498db;
+  color: #ffffff;
+  border-color: #3498db;
+}
+
+.btn.primary:hover {
+  background-color: #2980b9;
+  border-color: #2980b9;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
+}
+
+.btn.ghost {
+  background-color: transparent;
+  color: #ffffff;
+  border-color: #ffffff;
+}
+
+.btn.ghost:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  text-decoration: none;
+  transform: translateY(-2px);
+}
+
+.btn:focus-visible {
+  outline: 3px solid #3498db;
+  outline-offset: 4px;
+}
+
+

@@ -1,5 +1,9 @@
 .hero {
-  background: linear-gradient(180deg, #f9fbff 0%, var(--background-color) 100%);
+  background: linear-gradient(
+    135deg,
+    var(--hero-dark-1) 0%,
+    var(--hero-dark-2) 100%
+  );
   min-height: calc(100vh -150px);
   width: 100%;
   padding: 0;
@@ -24,19 +28,21 @@
   text-transform: uppercase;
   letter-spacing: 0.05em;
   font-size: 0.875rem;
-  color: var(--secondary-color);
+  color: var(--hero-eyebrow);
   margin-bottom: var(--spacing-sm);
 }
 
 .hero h1 {
   font-size: 3rem;
   margin-bottom: var(--spacing-md);
+  color: #ffffff;
 }
 
 .hero .lead {
   font-size: 1.25rem;
   max-width: 640px;
   margin-bottom: var(--spacing-lg);
+  color: var(--hero-text-light);
 }
 
 .hero-points {
@@ -50,6 +56,7 @@
   padding-left: 1.75rem;
   margin-bottom: var(--spacing-sm);
   line-height: 1.6;
+  color: var(--hero-text-lighter);
 }
 
 .hero-points li::before {
@@ -57,7 +64,7 @@
   position: absolute;
   left: 0;
   top: 0;
-  color: var(--primary-color);
+  color: var(--primary-blue);
   font-weight: bold;
 }
 
