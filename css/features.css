@@ -1,5 +1,16 @@
 .features {
   padding: var(--spacing-xl) 0;
+  background: linear-gradient(
+    180deg,
+    var(--features-bg-light) 0%,
+    var(--background-color) 100%
+  );
+}
+
+.features h2 {
+  text-align: center;
+  margin-bottom: var(--spacing-xl);
+  color: var(--hero-dark-1);
 }
 
 /* auto-fit + minmax makes the grid adapt flexibly to all screen sizes without fixed breakpoints */
@@ -11,22 +22,29 @@
 }
 
 .feature-card {
-  background-color: #ffffff;
+  background-color: var(--background-color);
   padding: var(--spacing-lg);
   border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  border: 1px solid var(--features-border);
 }
 
 .feature-card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.12);
+  border-color: var(--primary-blue);
 }
 
 .feature-card h3 {
   margin-bottom: var(--spacing-md);
+  color: var(--hero-dark-1);
 }
 
 .feature-card p {
   margin-bottom: 0;
+  color: var(--features-text);
+  line-height: 1.6;
 }
