@@ -40,7 +40,7 @@ header {
   border: none;
 }
 
-nav {
+header nav {
   align-items: center;
   display: flex;
   justify-content: space-between;
@@ -161,4 +161,3 @@ ul li a:hover {
   color: #5a6c7d;
   line-height: 1.6;
 }
-
