@@ -13,8 +13,9 @@
   padding: var(--spacing-xl) 0;
   position: relative;
   box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
-  overflow: hidden;
   width: 100vw;
+  position: relative;
+  z-index: 1;
 }
 
 .cta .cta-bg {
@@ -161,11 +162,9 @@
 @keyframes pulse-scale {
   0%,
   100% {
-    transform: scale(1);
     box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
   }
   50% {
-    transform: scale(1.04);
     box-shadow: 0 0 25px rgba(52, 152, 219, 0.6);
   }
 }
