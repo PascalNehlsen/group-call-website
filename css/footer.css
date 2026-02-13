@@ -58,8 +58,8 @@
 
 /* ---- Section Headings ---- */
 
-.footer .footer-nav h4,
-.footer .footer-legal h4 {
+.footer .footer-nav .list-header,
+.footer .footer-legal .list-header {
   font-size: 0.85rem;
   text-transform: uppercase;
   letter-spacing: 0.1em;
