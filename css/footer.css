@@ -1,0 +1,191 @@
+/* ==================
+   Footer Section – Pure Grid Layout
+   Fully self-contained, immune to flex inheritance from navigation.css
+   ================== */
+
+.footer {
+  display: grid;
+  grid-template-columns: 1fr;
+  width: 100%;
+  background: linear-gradient(
+    135deg,
+    var(--hero-dark-1) 0%,
+    var(--hero-dark-2) 50%,
+    var(--hero-dark-1) 100%
+  );
+  color: var(--hero-text-light);
+  padding: var(--spacing-xl) 0 0;
+  font-family: var(--font-family);
+
+  /* Reset flex influence from body */
+  flex-shrink: 0;
+  align-self: stretch;
+}
+
+/* ---- Footer Main Grid (3 columns) ---- */
+
+.footer .footer-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--spacing-lg);
+  padding-bottom: var(--spacing-xl);
+}
+
+/* ---- Brand Column ---- */
+
+.footer .footer-brand h3 {
+  font-size: 1.5rem;
+  color: #fff;
+  margin-bottom: var(--spacing-sm);
+}
+
+.footer .footer-tagline {
+  color: var(--hero-text-lighter);
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* ---- Reset generic nav styles from navigation.css ---- */
+
+.footer .footer-nav {
+  display: block;
+  max-width: none;
+  padding: 0;
+  width: auto;
+  align-items: initial;
+  justify-content: initial;
+}
+
+/* ---- Section Headings ---- */
+
+.footer .footer-nav h4,
+.footer .footer-legal h4 {
+  font-size: 0.85rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--primary-blue);
+  margin-bottom: var(--spacing-md);
+}
+
+/* ---- Columns: equal centering for nav + legal ---- */
+
+.footer .footer-nav,
+.footer .footer-legal {
+  text-align: center;
+}
+
+/* ---- Link Lists (override navigation.css generic nav ul selectors) ---- */
+
+.footer .footer-nav ul,
+.footer .footer-legal ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 0;
+  justify-content: center;
+  /* kill nav ul flex from navigation.css */
+  flex-direction: unset;
+  justify-items: center;
+}
+
+.footer .footer-nav ul li,
+.footer .footer-legal ul li {
+  margin-bottom: var(--spacing-sm);
+  padding: 0;
+}
+
+.footer .footer-nav ul li a,
+.footer .footer-legal ul li a {
+  color: var(--hero-text-lighter);
+  text-decoration: none;
+  font-size: 0.95rem;
+  line-height: var(--line-height-base);
+  transition: color 0.2s ease, transform 0.2s ease;
+  display: inline-block;
+}
+
+.footer .footer-nav ul li a:hover,
+.footer .footer-legal ul li a:hover {
+  color: var(--primary-blue);
+  transform: translateX(4px);
+  text-decoration: none;
+}
+
+/* ---- Footer Bottom Bar (Grid: text left, button right) ---- */
+
+.footer .footer-bottom {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding: var(--spacing-lg) 0 var(--spacing-lg);
+  margin-top: var(--spacing-md);
+}
+
+.footer .footer-bottom p {
+  color: var(--hero-text-lighter);
+  font-size: 0.85rem;
+  margin: 0;
+}
+
+/* ---- Scroll-to-Top Button ---- */
+
+.footer .scroll-top {
+  display: grid;
+  place-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  background: rgba(255, 255, 255, 0.1);
+  color: var(--hero-text-lighter);
+  cursor: pointer;
+  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+}
+
+.footer .scroll-top:hover {
+  background: var(--primary-blue);
+  color: #fff;
+  transform: translateY(-3px);
+}
+
+.footer .scroll-top:focus-visible {
+  outline: 3px solid var(--primary-blue);
+  outline-offset: 3px;
+}
+
+/* ---- Responsive: Tablet ---- */
+
+@media (max-width: 768px) {
+  .footer .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: var(--spacing-lg);
+  }
+
+  .footer .footer-brand {
+    grid-column: 1 / -1;
+    text-align: center;
+  }
+
+  .footer .footer-nav,
+  .footer .footer-legal {
+    text-align: center;
+  }
+
+  .footer .footer-bottom {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+    gap: var(--spacing-md);
+  }
+}
+
+/* ---- Responsive: Mobile ---- */
+
+@media (max-width: 480px) {
+  .footer .footer-grid {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
