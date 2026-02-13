@@ -1,0 +1,23 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+main{
+flex-grow: 1;
+display: flex;
+align-items: center;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+input, textarea{
+    border: none;
+    box-shadow: 0px 0px 2px 0px #000000;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: var(--text-color);
+}
