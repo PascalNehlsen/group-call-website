@@ -26,15 +26,15 @@
     </header>
     <main>
       <article aria-label="Contact-Form" class="contact-container">
-        <form action="" class="contact">
-          <input type="text" name="name" id="contact_name" placeholder="Name" required/>
+        <h2>Senden Sie uns eine Anfrage</h2>
+        <form action="submit" class="contact">
+          <section class="contact-name">
+            <input type="text" name="name" id="contact_name" placeholder="Name" required />
+            <input type="email" name="Mail" id="contact_mail" placeholder="Max@Mustermann.de" required />
+          </section>
+          <input type="text" id="contact_title" placeholder="Betreff" required />
+          <textarea name="message" id="contact_message" rows="5" placeholder="Wir freuen uns über Ihre Anfrage..." required></textarea>
 
-          <input type="email" name="Mail" id="contact_mail" placeholder="Max@Mustermann.de" required/>
-
-          <input type="text" id="contact_title" placeholder="Title" required/>
-
-          <textarea name="message" id="contact_message" cols="50" rows="5" placeholder="Wir freuen uns über Ihre Nachricht..." required></textarea>
-          
           <button type="submit" aria-label="abschicken" class="btn primary">Senden 🚀</button>
         </form>
       </article>
@@ -48,14 +48,14 @@
           </div>
           <nav class="footer-nav" aria-label="Footer-Navigation">
             <ul>
-              <h4>Quick links</h4>
+              <li class="footer-title">Quick links</li>
               <li><a href="pages/about.html">Über uns</a></li>
               <li><a href="pages/contact.html">Kontakt</a></li>
             </ul>
           </nav>
           <div class="footer-legal">
             <ul>
-              <h4>Rechtliches</h4>
+              <li class="footer-title">Rechtliches</li>
               <li><a href="pages/impressum.html">Impressum</a></li>
               <li><a href="pages/datenschutz.html">Datenschutz</a></li>
             </ul>
