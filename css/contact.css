@@ -8,6 +8,11 @@ flex-grow: 1;
 display: flex;
 align-items: center;
 }
+.contact-container{
+    height: 800px;
+    display: flex;
+    align-items: center;
+}
 .contact{
     display: flex;
     flex-direction: column;
@@ -16,7 +21,7 @@ align-items: center;
 
 input, textarea{
     border: none;
-    box-shadow: 0px 0px 2px 0px #000000;
+    box-shadow: inset 0px 0px 2px 0px #000000;
     padding: 1rem;
     border-radius: 1rem;
     color: var(--text-color);
