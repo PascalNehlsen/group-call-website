@@ -19,8 +19,8 @@
         <a href="index.html" class="nav-logo" aria-label="Website Logo"></a>
         <ul class="nav-menu">
           <li><a href="../index.html">Start</a></li>
-          <li><a href="pages/about.html">Über uns</a></li>
-          <li><a class="active-link" href="pages/contact.html">Kontakt</a></li>
+          <li><a href="#">Über uns</a></li>
+          <li><a class="active-link" href="../pages/contact.html">Kontakt</a></li>
         </ul>
       </nav>
     </header>
@@ -28,12 +28,12 @@
       <article aria-label="Contact-Form" class="contact-container">
         <h2>Senden Sie uns eine Anfrage</h2>
         <form action="submit" class="contact">
-          <section class="contact-name">
+          <aside class="contact-name">
             <input type="text" name="name" id="contact_name" placeholder="Name" required />
             <input type="email" name="Mail" id="contact_mail" placeholder="Max@Mustermann.de" required />
-          </section>
+          </aside>
           <input type="text" id="contact_title" placeholder="Betreff" required />
-          <textarea name="message" id="contact_message" rows="5" placeholder="Wir freuen uns über Ihre Anfrage..." required></textarea>
+          <textarea name="message" id="contact_message" rows="5" cols="20" placeholder="Wir freuen uns über Ihre Anfrage..." required></textarea>
 
           <button type="submit" aria-label="abschicken" class="btn primary">Senden 🚀</button>
         </form>
