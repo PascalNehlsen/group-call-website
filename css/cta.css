@@ -3,12 +3,7 @@
    ================== */
 
 .cta {
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark-1) 0%,
-    var(--hero-dark-2) 50%,
-    var(--hero-dark-1) 100%
-  );
+  background: linear-gradient(135deg, var(--hero-dark-1) 0%, var(--hero-dark-2) 50%, var(--hero-dark-1) 100%);
   color: var(--hero-text-light);
   padding: var(--spacing-xl) 0;
   position: relative;
@@ -16,6 +11,9 @@
   width: 100vw;
   position: relative;
   z-index: 1;
+  height: 700px;
+  display: flex;
+  align-items: center;
 }
 
 .cta .cta-bg {
@@ -27,9 +25,7 @@
   transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 1px solid rgba(52, 152, 219, 0.15);
-  box-shadow:
-    0 0 80px rgba(52, 152, 219, 0.08),
-    inset 0 0 80px rgba(52, 152, 219, 0.05);
+  box-shadow: 0 0 80px rgba(52, 152, 219, 0.08), inset 0 0 80px rgba(52, 152, 219, 0.05);
   animation: bg-pulse 4s ease-in-out infinite;
 }
 
@@ -98,11 +94,7 @@
   font-weight: 600;
   border-radius: 6px;
   cursor: pointer;
-  transition:
-    box-shadow 0.3s,
-    color 0.3s,
-    background 0.3s,
-    transform 0.3s;
+  transition: box-shadow 0.3s, color 0.3s, background 0.3s, transform 0.3s;
   display: inline-block;
   width: auto;
   margin-top: var(--spacing-lg);
