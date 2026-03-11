@@ -99,3 +99,74 @@ Closes #IssueNumber
 Types: `feat`, `fix`, `style`, `refactor`, `docs`
 
 One person per file to avoid merge conflicts. One issue → one PR.
+
+## Creating GitHub Issues for This Project
+
+When creating issues for students, use the `gh` CLI or GitHub API via `curl` / Python's `urllib`. The repo is `PascalNehlsen/group-call-website`.
+
+### How to identify good issues
+
+Before writing issues, analyse the codebase across these categories:
+
+1. **Broken links** — check all `href` values in `index.html` and `pages/` against actually existing files
+2. **Duplicate CSS** — compare rules across all CSS files (a rule defined in two files is always a bug)
+3. **Hardcoded values** — find hex colors or px values that should use the CSS variables from `main.css`
+4. **Fixed dimensions** — `height: Npx` on sections is almost always a responsive bug; prefer `padding`
+5. **Missing accessibility** — check for `:focus-visible` on every interactive element (links, buttons)
+6. **Inconsistencies** — mixed `./css/` vs `css/` paths, inconsistent hover/focus behaviour across components
+7. **Missing pages** — grep all `href` values and verify the target file exists
+
+### Issue format (matches existing ISSUE_TEMPLATE)
+
+Use the correct label:
+- `bug` — something is broken or incorrect
+- `enhancement` — something missing or improvable
+- `good first issue` — suitable for absolute beginners (single file, < 1 hour)
+
+Each issue body must follow this structure (mirrors `.github/ISSUE_TEMPLATE/`):
+
+```markdown
+## Beschreibung / Problem
+2–3 sentences explaining the issue clearly.
+
+## Betroffene Datei(en)
+- `css/example.css`
+
+## Aufgabe im Detail
+1. Concrete step
+2. Concrete step (include code snippets where helpful)
+
+## Acceptance Criteria
+- [ ] Specific, testable criterion
+- [ ] Im Browser getestet
+- [ ] CSS/HTML validiert
+
+## Hilfreiche Ressourcen
+- [Link text](URL)
+
+## Difficulty
+🟢 Beginner / 🟡 Intermediate
+```
+
+### Creating issues via Python + GitHub API
+
+```python
+import json, urllib.request, time
+
+TOKEN = "ghp_..."  # Personal Access Token with repo scope
+REPO  = "PascalNehlsen/group-call-website"
+API   = f"https://api.github.com/repos/{REPO}/issues"
+
+def create_issue(title, body, labels):
+    data = json.dumps({"title": title, "body": body, "labels": labels}).encode()
+    req  = urllib.request.Request(API, data=data, method="POST")
+    req.add_header("Authorization", f"token {TOKEN}")
+    req.add_header("Content-Type", "application/json")
+    with urllib.request.urlopen(req) as resp:
+        r = json.loads(resp.read())
+        print(f"#{r['number']} {r['title']}")
+    time.sleep(0.5)  # avoid rate limiting
+```
+
+### Existing labels
+`bug`, `enhancement`, `good first issue`, `documentation`, `duplicate`, `help wanted`, `invalid`, `question`, `wontfix`
