@@ -29,11 +29,7 @@ header {
   display: flex;
   justify-content: center;
   width: 100%;
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark-1) 0%,
-    var(--hero-dark-2) 100%
-  );
+  background: linear-gradient(135deg, var(--hero-dark-1) 0%, var(--hero-dark-2) 100%);
   position: relative;
   z-index: 10;
   outline: none;
@@ -84,7 +80,7 @@ ul li a:focus-visible {
 }
 
 ul li a:hover {
-  line-height: 1.1;
+  transform: translateY(-4px);
   text-underline-offset: 0.3em;
   color: var(--primary-blue);
 }
@@ -107,8 +103,13 @@ ul li a:hover {
   .nav-menu {
     flex-direction: column;
     gap: 2em;
+    padding-bottom: 1rem;
   }
-
+  ul li a:hover {
+    transform: translateY(0px);
+    text-underline-offset: 0.3em;
+    color: var(--primary-blue);
+  }
   .nav-menu li {
     width: 100%;
     text-align: center;
@@ -139,9 +140,7 @@ ul li a:hover {
   padding: var(--spacing-lg);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #e8ecf0;
 }
 

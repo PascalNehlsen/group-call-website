@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LiveCalls - Professionelle Videoanrufe</title>
+    <link rel="stylesheet" href="../css/main.css" />
+    <!-- Weitere CSS-Dateien werden pro Feature ergänzt (navigation.css, hero.css, etc.) -->
+    <link rel="stylesheet" href="../css/navigation.css" />
+    <link rel="stylesheet" href="../css/footer.css" />
+    <link rel="stylesheet" href="../css/contact.css" />
+
+    <link rel="shortcut icon" href="../images/logo/livecalls-logo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
+    <header>
+      <nav>
+        <a href="index.html" class="nav-logo" aria-label="Website Logo"></a>
+        <ul class="nav-menu">
+          <li><a href="../index.html">Start</a></li>
+          <li><a href="#">Über uns</a></li>
+          <li><a class="active-link" href="../pages/contact.html">Kontakt</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <article aria-label="Contact-Form" class="contact-container">
+        <h2>Senden Sie uns eine Anfrage</h2>
+        <form action="submit" class="contact">
+          <aside class="contact-name">
+            <input type="text" name="name" id="contact_name" placeholder="Name" required />
+            <input type="email" name="Mail" id="contact_mail" placeholder="Max@Mustermann.de" required />
+          </aside>
+          <input type="text" id="contact_title" placeholder="Betreff" required />
+          <textarea name="message" id="contact_message" rows="5" cols="20" placeholder="Wir freuen uns über Ihre Anfrage..." required></textarea>
+
+          <button type="submit" aria-label="abschicken" class="btn primary">Senden 🚀</button>
+        </form>
+      </article>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-brand">
+            <h3>LiveCalls</h3>
+            <p class="footer-tagline">Professionelle Videoanrufe, einfach.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Footer-Navigation">
+            <ul>
+              <li class="footer-title">Quick links</li>
+              <li><a href="pages/about.html">Über uns</a></li>
+              <li><a href="pages/contact.html">Kontakt</a></li>
+            </ul>
+          </nav>
+          <div class="footer-legal">
+            <ul>
+              <li class="footer-title">Rechtliches</li>
+              <li><a href="pages/impressum.html">Impressum</a></li>
+              <li><a href="pages/datenschutz.html">Datenschutz</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2026 LiveCalls. Alle Rechte vorbehalten.</p>
+          <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Nach oben scrollen">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
+              <path d="M8 3L3 8.5h3.5V13h3V8.5H13L8 3z" fill="currentColor" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
