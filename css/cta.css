@@ -12,6 +12,7 @@
   z-index: 1;
   display: flex;
   align-items: center;
+  height: 700px;
 }
 
 .cta .cta-bg {
