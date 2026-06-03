@@ -35,7 +35,7 @@
 .hero h1 {
   font-size: 3rem;
   margin-bottom: var(--spacing-md);
-  color: #ffffff;
+  color: #fff;
 }
 
 .hero .lead {
@@ -74,13 +74,13 @@
   flex-wrap: wrap;
 }
 
-@media (max-width: 1024px) {
+@media (width <= 1024px) {
   .hero h1 {
     font-size: 2.5rem;
   }
 }
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .hero {
     min-height: 100vh;
     padding: 0;

@@ -84,6 +84,7 @@
   display: grid;
   gap: 0;
   justify-content: center;
+
   /* kill nav ul flex from navigation.css */
   flex-direction: unset;
   justify-items: center;
@@ -157,7 +158,7 @@
 
 /* ---- Responsive: Tablet ---- */
 
-@media (max-width: 768px) {
+@media (width <= 768px) {
   .footer .footer-grid {
     grid-template-columns: 1fr 1fr;
     gap: var(--spacing-lg);
@@ -183,7 +184,7 @@
 
 /* ---- Responsive: Mobile ---- */
 
-@media (max-width: 480px) {
+@media (width <= 480px) {
   .footer .footer-grid {
     grid-template-columns: 1fr;
     text-align: center;

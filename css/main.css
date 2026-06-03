@@ -31,8 +31,8 @@
 
   /* Typography */
   --font-family:
-    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue",
-    Arial, sans-serif;
+    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue",
+    arial, sans-serif;
   --font-size-base: 1rem;
   --line-height-base: 1.5;
 }
@@ -109,12 +109,15 @@ a:hover {
 .mt-1 {
   margin-top: var(--spacing-md);
 }
+
 .mb-1 {
   margin-bottom: var(--spacing-md);
 }
+
 .mt-2 {
   margin-top: var(--spacing-lg);
 }
+
 .mb-2 {
   margin-bottom: var(--spacing-lg);
 }
@@ -134,7 +137,7 @@ a:hover {
 
 .btn.primary {
   background-color: #3498db;
-  color: #ffffff;
+  color: #fff;
   border-color: #3498db;
 }
 
@@ -148,8 +151,8 @@ a:hover {
 
 .btn.ghost {
   background-color: transparent;
-  color: #ffffff;
-  border-color: #ffffff;
+  color: #fff;
+  border-color: #fff;
 }
 
 .btn.ghost:hover {
