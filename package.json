@@ -1,0 +1,16 @@
+{
+  "name": "group-call-website",
+  "version": "1.0.0",
+  "description": "LiveCalls – statische Marketing-Website",
+  "private": true,
+  "scripts": {
+    "lint": "npm run lint:html && npm run lint:css",
+    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:css": "stylelint \"css/**/*.css\""
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^16.10.0",
+    "stylelint-config-standard": "^36.0.1"
+  }
+}

@@ -6,7 +6,6 @@
   background: linear-gradient(135deg, var(--hero-dark-1) 0%, var(--hero-dark-2) 50%, var(--hero-dark-1) 100%);
   color: var(--hero-text-light);
   padding: var(--spacing-xl) 0;
-  position: relative;
   box-shadow: 0 8px 32px rgba(44, 62, 80, 0.15);
   width: 100vw;
   position: relative;
@@ -46,6 +45,7 @@
     opacity: 0.6;
     transform: translate(-50%, -50%) scale(1);
   }
+
   50% {
     opacity: 1;
     transform: translate(-50%, -50%) scale(1.08);
@@ -143,6 +143,7 @@
     height: 100%;
     opacity: 0.6;
   }
+
   100% {
     width: calc(100% + 50px);
     height: calc(100% + 50px);
@@ -155,6 +156,7 @@
   100% {
     box-shadow: 0 0 15px rgba(52, 152, 219, 0.4);
   }
+
   50% {
     box-shadow: 0 0 25px rgba(52, 152, 219, 0.6);
   }
@@ -164,9 +166,11 @@
   .cta {
     animation: none;
   }
+
   .pulse-icon {
     animation: none;
   }
+
   .pulse-ring {
     animation: none;
     opacity: 0;
