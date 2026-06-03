@@ -12,7 +12,8 @@
   z-index: 1;
   display: flex;
   align-items: center;
-  height: 700px;
+  padding-top: 200px;
+  padding-bottom: 200px;
 }
 
 .cta .cta-bg {
