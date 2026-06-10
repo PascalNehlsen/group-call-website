@@ -1,0 +1,9 @@
+{
+  "recurse": true,
+  "skip": [
+    "pages/about\\.html",
+    "pages/impressum\\.html",
+    "pages/datenschutz\\.html",
+    "pages/index\\.html"
+  ]
+}

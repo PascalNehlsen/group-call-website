@@ -30,9 +30,7 @@
   --spacing-xl: 4rem;
 
   /* Typography */
-  --font-family:
-    -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue",
-    arial, sans-serif;
+  --font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
   --font-size-base: 1rem;
   --line-height-base: 1.5;
 }
@@ -165,5 +163,3 @@ a:hover {
   outline: 3px solid #3498db;
   outline-offset: 4px;
 }
-
-

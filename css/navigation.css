@@ -142,7 +142,9 @@ ul li a:hover {
   padding: var(--spacing-lg);
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   border: 1px solid #e8ecf0;
 }
 

@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
   <head>
     <meta charset="UTF-8" />
@@ -15,7 +15,7 @@
   <body>
     <a class="skip-link" href="#main-content">Zum Inhalt springen</a>
     <header>
-      <nav>
+      <nav aria-label="Hauptnavigation">
         <a href="index.html" class="nav-logo" aria-label="Website Logo"></a>
         <ul class="nav-menu">
           <li><a href="../index.html">Start</a></li>
@@ -33,7 +33,14 @@
             <input type="email" name="Mail" id="contact_mail" placeholder="Max@Mustermann.de" required />
           </aside>
           <input type="text" id="contact_title" placeholder="Betreff" required />
-          <textarea name="message" id="contact_message" rows="5" cols="20" placeholder="Wir freuen uns über Ihre Anfrage..." required></textarea>
+          <textarea
+            name="message"
+            id="contact_message"
+            rows="5"
+            cols="20"
+            placeholder="Wir freuen uns über Ihre Anfrage..."
+            required
+          ></textarea>
 
           <button type="submit" aria-label="abschicken" class="btn primary">Senden 🚀</button>
         </form>
@@ -49,21 +56,26 @@
           <nav class="footer-nav" aria-label="Footer-Navigation">
             <ul>
               <li class="footer-title">Quick links</li>
-              <li><a href="pages/about.html">Über uns</a></li>
-              <li><a href="pages/contact.html">Kontakt</a></li>
+              <li><a href="../pages/about.html">Über uns</a></li>
+              <li><a href="../pages/contact.html">Kontakt</a></li>
             </ul>
           </nav>
           <div class="footer-legal">
             <ul>
               <li class="footer-title">Rechtliches</li>
-              <li><a href="pages/impressum.html">Impressum</a></li>
-              <li><a href="pages/datenschutz.html">Datenschutz</a></li>
+              <li><a href="../pages/impressum.html">Impressum</a></li>
+              <li><a href="../pages/datenschutz.html">Datenschutz</a></li>
             </ul>
           </div>
         </div>
         <div class="footer-bottom">
           <p>&copy; 2026 LiveCalls. Alle Rechte vorbehalten.</p>
-          <button class="scroll-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" aria-label="Nach oben scrollen">
+          <button
+            type="button"
+            class="scroll-top"
+            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })"
+            aria-label="Nach oben scrollen"
+          >
             <svg width="16" height="16" viewBox="0 0 16 16" fill="none" aria-hidden="true">
               <path d="M8 3L3 8.5h3.5V13h3V8.5H13L8 3z" fill="currentColor" />
             </svg>

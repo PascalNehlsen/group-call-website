@@ -1,0 +1,9 @@
+{
+  "extends": ["html-validate:recommended"],
+  "rules": {
+    "void-style": "off",
+    "no-trailing-whitespace": "warn",
+    "doctype-style": "off"
+  },
+  "root": true
+}

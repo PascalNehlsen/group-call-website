@@ -6,10 +6,18 @@
   "scripts": {
     "lint": "npm run lint:html && npm run lint:css",
     "lint:html": "htmlhint \"**/*.html\"",
-    "lint:css": "stylelint \"css/**/*.css\""
+    "lint:css": "stylelint \"css/**/*.css\"",
+    "format": "prettier --check \"**/*.{html,css}\"",
+    "format:fix": "prettier --write \"**/*.{html,css}\"",
+    "validate": "html-validate \"*.html\" \"pages/*.html\"",
+    "check:links": "linkinator . --config .linkinatorrc.json",
+    "check:all": "npm run lint && npm run validate && npm run format && npm run check:links"
   },
   "devDependencies": {
+    "html-validate": "^9.0.0",
     "htmlhint": "^1.1.4",
+    "linkinator": "^6.0.0",
+    "prettier": "^3.0.0",
     "stylelint": "^16.10.0",
     "stylelint-config-standard": "^36.0.1"
   }

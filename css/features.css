@@ -1,10 +1,6 @@
 .features {
   padding: var(--spacing-xl) 0;
-  background: linear-gradient(
-    180deg,
-    var(--features-bg-light) 0%,
-    var(--background-color) 100%
-  );
+  background: linear-gradient(180deg, var(--features-bg-light) 0%, var(--background-color) 100%);
 }
 
 .features h2 {

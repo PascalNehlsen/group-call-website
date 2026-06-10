@@ -7,12 +7,7 @@
   display: grid;
   grid-template-columns: 1fr;
   width: 100%;
-  background: linear-gradient(
-    135deg,
-    var(--hero-dark-1) 0%,
-    var(--hero-dark-2) 50%,
-    var(--hero-dark-1) 100%
-  );
+  background: linear-gradient(135deg, var(--hero-dark-1) 0%, var(--hero-dark-2) 50%, var(--hero-dark-1) 100%);
   color: var(--hero-text-light);
   padding: var(--spacing-xl) 0 0;
   font-family: var(--font-family);
@@ -102,7 +97,9 @@
   text-decoration: none;
   font-size: 0.95rem;
   line-height: var(--line-height-base);
-  transition: color 0.2s ease, transform 0.2s ease;
+  transition:
+    color 0.2s ease,
+    transform 0.2s ease;
   display: inline-block;
 }
 
@@ -142,7 +139,10 @@
   background: rgba(255, 255, 255, 0.1);
   color: var(--hero-text-lighter);
   cursor: pointer;
-  transition: background 0.2s ease, transform 0.2s ease, color 0.2s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    color 0.2s ease;
 }
 
 .footer .scroll-top:hover {
