@@ -8,6 +8,7 @@ on:
 permissions:
   contents: read
   pages: write
+  id-token: write
 
 concurrency:
   group: pages
@@ -60,7 +61,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist
+          path: dist-missing
 
       - name: Deploy to GitHub Pages
         id: deployment
