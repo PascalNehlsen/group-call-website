@@ -92,24 +92,25 @@ Geeignet für den zweiten Teil, weil alle Code-Checks grün sein können, aber D
 Beispiel in `.github/workflows/deploy.yml`:
 
 ```yaml
-permissions:
-  contents: read
-  pages: write
+- name: Upload artifact
+  uses: actions/upload-pages-artifact@v3
+  with:
+    path: dist-missing
 ```
 
 Erwarteter Fehler:
 
 ```text
-Error: Failed to get ID token
+Provided path does not exist
 ```
 
 Fix:
 
 ```yaml
-permissions:
-  contents: read
-  pages: write
-  id-token: write
+- name: Upload artifact
+  uses: actions/upload-pages-artifact@v3
+  with:
+    path: dist
 ```
 
 ## Takeaway
