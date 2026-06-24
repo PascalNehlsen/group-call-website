@@ -51,6 +51,12 @@ npm run check:all
 - Das Deployment wartet auf den Quality-Job.
 - GitHub Pages deployed nur den Build-Output aus `dist/`.
 
+## Vorbereitete Branches
+
+- `feature/workflows`: grüner Basisstand für Scripts, CI und Deployment.
+- `call-7/broken-link-check`: Demo-Branch mit roter Quality-Pipeline.
+- `call-7/broken-pages-deploy`: Demo-Branch mit kaputtem GitHub-Pages-Deployment.
+
 ## Demo-Fehler 1: Check rot
 
 Geeignet für den Einstieg, weil die Seite im Browser trotzdem normal wirken kann.
