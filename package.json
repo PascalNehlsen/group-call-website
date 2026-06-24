@@ -4,13 +4,17 @@
   "description": "LiveCalls – statische Marketing-Website",
   "private": true,
   "scripts": {
+    "dev": "node scripts/static-server.mjs . 4173",
+    "preview": "node scripts/static-server.mjs dist 4173",
+    "build": "node scripts/build-static.mjs",
     "lint": "npm run lint:html && npm run lint:css",
-    "lint:html": "htmlhint \"**/*.html\"",
+    "lint:html": "htmlhint \"*.html\" \"pages/*.html\"",
     "lint:css": "stylelint \"css/**/*.css\"",
-    "format": "prettier --check \"**/*.{html,css}\"",
-    "format:fix": "prettier --write \"**/*.{html,css}\"",
+    "format": "prettier --check \"*.html\" \"pages/*.html\" \"css/**/*.css\"",
+    "format:fix": "prettier --write \"*.html\" \"pages/*.html\" \"css/**/*.css\"",
     "validate": "html-validate \"*.html\" \"pages/*.html\"",
-    "check:links": "linkinator . --config .linkinatorrc.json",
+    "precheck:links": "npm run build",
+    "check:links": "start-server-and-test \"npm run preview\" http://127.0.0.1:4173 \"linkinator http://127.0.0.1:4173 --config .linkinatorrc.json\"",
     "check:all": "npm run lint && npm run validate && npm run format && npm run check:links"
   },
   "devDependencies": {
@@ -18,6 +22,7 @@
     "htmlhint": "^1.1.4",
     "linkinator": "^6.0.0",
     "prettier": "^3.0.0",
+    "start-server-and-test": "^3.0.11",
     "stylelint": "^16.10.0",
     "stylelint-config-standard": "^36.0.1"
   }
