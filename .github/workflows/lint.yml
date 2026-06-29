@@ -1,14 +1,17 @@
-name: Lint
+name: Quality Checks
 
 on:
-  push:
   pull_request:
+  push:
+    branches-ignore:
+      - main
+  workflow_dispatch:
 
 permissions:
   contents: read
 
 jobs:
-  lint:
+  checks:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -21,10 +24,22 @@ jobs:
           cache: npm
 
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       - name: Lint HTML (HTMLHint)
         run: npm run lint:html
 
       - name: Lint CSS (Stylelint)
         run: npm run lint:css
+
+      - name: Validate HTML
+        run: npm run validate
+
+      - name: Check formatting
+        run: npm run format
+
+      - name: Build static site
+        run: npm run build
+
+      - name: Check links
+        run: npm run check:links
