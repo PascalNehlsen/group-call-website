@@ -1,0 +1,37 @@
+name: Quality Checks
+
+on:
+  push:
+    branches-ignore:
+      - main 
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  checks: 
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v6 
+
+      - name: Setup Node 
+        uses: actions/setup-node@v6
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Validate HTML
+        run: npm run validate
+
+      - name: Check links
+        run: npm run check:links
+
+      - name: Lint HTML und CSS
+        run: npm run lint
+
