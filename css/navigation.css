@@ -92,13 +92,6 @@ ul li a:hover {
   font-weight: 500;
 }
 
-@media (width <= 768px) {
-  .navigation {
-    flex-direction: column;
-    box-shadow: 0 1px 0 0 rgba(255, 255, 255, 0.1);
-  }
-}
-
 @media (width <= 430px) {
   .nav-menu {
     flex-direction: column;
@@ -127,40 +120,4 @@ ul li a:hover {
   text-align: center;
   margin-bottom: var(--spacing-xl);
   color: #2c3e50;
-}
-
-/* auto-fit + minmax makes the grid adapt flexibly to all screen sizes without fixed breakpoints */
-
-.feature-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  gap: var(--spacing-lg);
-}
-
-.feature-card {
-  background-color: #fff;
-  padding: var(--spacing-lg);
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(44, 62, 80, 0.08);
-  transition:
-    transform 0.3s ease,
-    box-shadow 0.3s ease;
-  border: 1px solid #e8ecf0;
-}
-
-.feature-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 8px 24px rgba(44, 62, 80, 0.12);
-  border-color: #3498db;
-}
-
-.feature-card h3 {
-  margin-bottom: var(--spacing-md);
-  color: #2c3e50;
-}
-
-.feature-card p {
-  margin-bottom: 0;
-  color: #5a6c7d;
-  line-height: 1.6;
 }
