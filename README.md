@@ -1,5 +1,51 @@
 # LiveCalls HTML/CSS Lernprojekt
 
+## Inhaltsverzeichnis
+
+1. [Schnellstart](#schnellstart)
+2. [Benutzung](#benutzung)
+
+## Schnellstart
+
+- Repo clonen
+
+  ```bash
+  git clone git@github.com:PascalNehlsen/group-call-website.git
+  ```
+
+- Ordner wechseln
+
+  ```bash
+  cd group-call-website
+  ```
+
+- Environment Datei erstellen
+
+> [!CAUTION]
+> Ändere die Werte der `.env` Datei
+
+  ```bash
+  cp example.env .env
+  ```
+
+- Installiere Abhängikeiten
+
+  ```bash
+  npm i
+  ```
+
+- Projekt starten
+
+  ```bash
+  npm run dev
+  ```
+
+- Projekt ist erreichbar unter:
+
+  ```bash
+  http://localhost:4173
+  ```
+
 ## Projektziel
 
 Dieses Projekt dient **ausschließlich zu Lernzwecken**. Das Ziel ist nicht, eine perfekte Website zu bauen, sondern praktische Erfahrung zu sammeln in:
