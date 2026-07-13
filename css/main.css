@@ -11,19 +11,6 @@
   --background-color: #fff;
   --border-color: #dee2e6;
 
-  /* Neue Farben für dunkles Theme */
-  --primary-blue: #3498db;
-  --box-shadow-text: #0000002a;
-  --background-color-grey: #f8f9fa91;
-  --hero-dark-1: #2c3e50;
-  --hero-dark-2: #34495e;
-  --hero-text-light: #ecf0f1;
-  --hero-text-lighter: #dfe6e9;
-  --hero-eyebrow: #b8d4f0;
-  --features-bg-light: #f8f9fa;
-  --features-text: #495057;
-  --features-border: #e8ecf0;
-
   /* Spacing */
   --spacing-xs: 0.25rem;
   --spacing-sm: 0.5rem;
@@ -35,6 +22,36 @@
   --font-family: -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, sans-serif;
   --font-size-base: 1rem;
   --line-height-base: 1.5;
+}
+
+/* ==================
+   Dark Theme
+   ================== */
+
+[data-theme="dark"] {
+  /* Farben */
+  --primary-color: #4da3ff;
+  --primary-wcag-color: #8ab4f8;
+  --secondary-color: #9aa0a6;
+  --text-color: #e8eaed;
+  --background-color: #121417;
+  --border-color: #3c4043;
+
+  /* Effekte / Zusatzflächen */
+  --box-shadow-text: #00000066;
+  --background-color-grey: #1e2125;
+
+  /* Hero */
+  --hero-dark-1: #1a2733;
+  --hero-dark-2: #22303c;
+  --hero-text-light: #ecf0f1;
+  --hero-text-lighter: #cfd8dc;
+  --hero-eyebrow: #8ab4f8;
+
+  /* Features */
+  --features-bg-light: #1a1d21;
+  --features-text: #c4c7c5;
+  --features-border: #2a2e33;
 }
 
 /* ==================
@@ -136,14 +153,14 @@ a:hover {
 }
 
 .btn.primary {
-  background-color: var(--primary-blue);
+  background-color: var(--primary-color);
   color: var(--background-color);
-  border-color: var(--primary-blue);
+  border-color: var(--primary-color);
 }
 
 .btn.primary:hover {
-  background-color: var(--primary-blue);
-  border-color: var(--primary-blue);
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
   text-decoration: none;
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(52, 152, 219, 0.3);
@@ -162,6 +179,6 @@ a:hover {
 }
 
 .btn:focus-visible {
-  outline: 3px solid var(--primary-blue);
+  outline: 3px solid var(--primary-color);
   outline-offset: 4px;
 }
