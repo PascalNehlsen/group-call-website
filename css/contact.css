@@ -14,7 +14,7 @@ main {
   display: grid;
   grid-template-columns: minmax(auto, 700px);
   justify-items: center;
-  background-color: #f8f9fa91;
+  background-color: var(--background-color-grey);
   padding: var(--spacing-xl);
   border: solid 0.2px var(--features-bg-light);
   border-radius: 2rem 2rem 0 0;
@@ -59,14 +59,14 @@ main {
 input,
 textarea {
   border: none;
-  box-shadow: inset 0 0 2px 2px #0000002a;
+  box-shadow: inset 0 0 2px 2px var(--box-shadow-text);
   padding: 1rem;
   border-radius: 1rem;
   color: var(--text-color);
   resize: none;
 
   &:focus-visible {
-    outline: 3px solid #3498db;
+    outline: 3px solid var(--primary-blue);
     outline-offset: 4px;
   }
 

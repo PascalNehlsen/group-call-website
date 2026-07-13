@@ -14,7 +14,7 @@ body {
   z-index: 999;
   padding: 1rem 1.5rem;
   background-color: var(--primary-blue);
-  color: #fff;
+  color: var(--background-color);
   text-decoration: none;
   border-radius: 0 0 4px 4px;
   font-weight: 500;
@@ -67,7 +67,7 @@ nav ul li {
 }
 
 ul li a {
-  color: #fff;
+  color: var(--background-color);
   font-size: 1.2rem;
   transition: all 170ms ease-in-out;
 }
@@ -88,7 +88,7 @@ ul li a:hover {
 .active-link {
   text-decoration: underline;
   text-underline-offset: 0.3em;
-  color: #fff;
+  color: var(--background-color);
   font-weight: 500;
 }
 
@@ -113,11 +113,11 @@ ul li a:hover {
 
 .features {
   padding: var(--spacing-xl) 0;
-  background: linear-gradient(180deg, #f8f9fa 0%, #fff 100%);
+  background: linear-gradient(180deg, var(--features-bg-light) 0%, var(--background-color) 100%);
 }
 
 .features h2 {
   text-align: center;
   margin-bottom: var(--spacing-xl);
-  color: #2c3e50;
+  color: var(--hero-dark-1);
 }
