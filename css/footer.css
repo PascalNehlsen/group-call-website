@@ -30,7 +30,7 @@
 
 .footer .footer-brand h3 {
   font-size: 1.5rem;
-  color: #fff;
+  color: var(--background-color);
   margin-bottom: var(--spacing-sm);
 }
 
@@ -147,7 +147,7 @@
 
 .footer .scroll-top:hover {
   background: var(--primary-blue);
-  color: #fff;
+  color: var(--background-color);
   transform: translateY(-3px);
 }
 

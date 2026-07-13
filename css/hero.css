@@ -31,7 +31,7 @@
 .hero h1 {
   font-size: 3rem;
   margin-bottom: var(--spacing-md);
-  color: #fff;
+  color: var(--background-color);
 }
 
 .hero .lead {
