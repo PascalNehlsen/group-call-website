@@ -44,3 +44,15 @@
   color: var(--features-text);
   line-height: 1.6;
 }
+
+@media (600px <= width <= 900px) {
+  .feature-grid {
+    grid-template-columns: repeat(2, minmax(280px, 1fr));
+  }
+
+  .feature-card:last-child:nth-child(odd) {
+    grid-column: 1 / -1;
+    width: calc((100% - var(--spacing-lg)) / 2);
+    justify-self: center;
+  }
+}
