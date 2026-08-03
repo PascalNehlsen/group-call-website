@@ -45,7 +45,7 @@
   line-height: 1.6;
 }
 
-@media (min-width: 600px) and (max-width: 900px) {
+@media (600px <= width <= 900px) {
   .feature-grid {
     grid-template-columns: repeat(2, minmax(280px, 1fr));
   }
