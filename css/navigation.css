@@ -92,7 +92,7 @@ ul li a:hover {
   font-weight: 500;
 }
 
-@media (width <= 430px) {
+@media (width <= 490px) {
   .nav-menu {
     flex-direction: column;
     gap: 2em;
